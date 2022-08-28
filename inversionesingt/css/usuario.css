@@ -1,0 +1,64 @@
+/* CSS para La Cabecera  */
+*{
+	margin: 0 0;
+	font-family: sans-serif,arial,Verdana;
+}
+
+#contenedor-usuario{
+
+	height: 50px;
+	background:#008B8B;
+}
+
+img{
+	width: 30px;
+	height: 30px;
+	border-radius: 100px;
+	float: right;
+}
+
+#contenedor-usuario #usuario{
+	padding: 5px 30px;
+	font-size: 20px;
+}
+
+#contenedor-usuario .logo{
+margin: auto;
+float: left;
+padding: 5px 30px;
+color: #E0FFFF;
+}
+
+#contenedor-usuario #usuario p{
+	float: right;
+	color: #F0F8FF;
+	padding: 0 20px;
+	font-weight: 600;
+	margin: auto;
+}
+
+#usuario span{
+	float: right;
+	color: #F0F8FF;
+	padding: 0 20px;
+	font-weight: 600;
+}
+
+#usuario .user{
+	padding: 0 20px;
+	font-weight: 600;
+
+}
+
+#usuario .cerrar-sesion{
+float: right;
+	color: #F0F8FF;
+	padding: 0 20px;
+	font-weight: 600;
+	text-decoration: none;	
+}
+
+#usuario .cerrar-sesion:hover{
+	color: #808080;
+	transition: .9s;
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" href="css/usuario.css">
+	<link rel="stylesheet" type="text/css" href="css/barra-menu.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="css/contenido.css">
+	<title>InversionesINGT</title>
+	
+</head>
+<body>
+	
+	<div id="contenedor-usuario">	
+		<h1 class="logo"> InversionesINGT</h1>
+		<div id="usuario">
+		<a href="" class="cerrar-sesion">Cerrar Sesion</a>
+		<div class="img-usuario"><img src="img/usuario.jpg"></div>
+		<span class="user">Jabin Administrador</span>
+		<span>|</span>
+		 <p> Venezuela 10/5/2022 7:35 p.m</p>
+		</div>
+		</div>
+
+
+		<div id="contenedor-menu">
+				<input type="checkbox" id="check">
+				<label for="check" class="mostrar-menu">
+				&#8801
+		 		</label>
+  			
+				 	<nav class="menu">              <!--navegador -->
+			
+
+		 			<ul class="nav">
+		 	
+		 	
+
+		 	<li><a href="#">Usuario</a>
+		 		<ul>
+		 			<li><a href="#">Crear Usuario</a></li>
+		 		</ul>
+		 	</li>
+
+		 	
+
+		 	<li><a href="#">Lista de</a>
+		 	<ul>
+		 	<li><a href="#">Lista Usuarios</a></li>
+		 	<li><a href="#">Lista Clientes</a></li>
+		 	<li><a href="#">Lista Producto</a></li>
+		 	</ul>
+		 	</li>
+			 		</ul>	
+			
+					<label for="check" class="esconder-menu">
+		 			&#215
+		 			</label>
+					</nav>
+				<form action="sistema/buscar_usuario.php" method="get" class="form_buscar">
+				<input type="text" name="busqueda" id="busqueda" placeholder="Buscar">
+				<input type="submit" value="Buscar" class="btn_buscar" >
+				</form>
+					</div>
+					<h2>Lista de usuario</h2>
+
+<section id="contenedor">
+
+<table>
+	
+	<tr>
+		
+		<th>ID</th>
+		<th>NOMBRE</th>
+		<th>CORREO</th>
+		<th>USUARIO</th>
+		<th>ROL</th>
+		<th>ACCIONES</th>
+	</tr>
+<!--<?php 
+
+	//Paginador
+		$sql_register=mysqli_query($conn,"SELECT COUNT(*) as total_registro FROM usuarios WHERE estatus=1");
+		$result_register=mysqli_fetch_array($sql_register);
+		$total_registro=$result_register['total_registro'];
+
+		$por_pagina=5;
+
+		if (empty($_GET['pagina'])) {
+			$pagina=1;
+		}else{
+			$pagina=$_GET['pagina'];
+
+		}
+
+	$desde=($pagina-1)*$por_pagina;
+		$total_paginas=ceil($total_registro/$por_pagina);
+
+
+		$lista_query= mysqli_query($conn, "SELECT u.id_usuario, u.nombre,u.correo,u.usuario,r.rol FROM usuarios u INNER JOIN  rol r ON  u.rol=r.id_rol WHERE estatus=1
+												 ORDER BY u.id_usuario ASC LIMIT $desde,$por_pagina ");
+
+			mysqli_close($conn);
+			$resultado=mysqli_num_rows($lista_query);
+
+			if ($resultado>0) {
+				
+				while ($data=mysqli_fetch_array($lista_query)) {
+	
+
+
+	 ?> --->	
+
+		<tr class="datos">
+			<td>1</td>
+		<td>Jabin</td>
+		<td>jabins@hotma..com</td>
+		<td>admin</td>
+		<td>administrador</td>
+
+			<td>1</td>
+		<td>Jabin</td>
+		<td>jabins@hotma..com</td>
+		<td>admin</td>
+		<td>administrador</td>
+		<td>
+
+	<a class="editar" href="sistema/editar_usuario.php?id=<?php echo $data['id_usuario']; ?>">Editar</a>
+
+	<a class="eliminar" href="sistema/eliminar_usuario.php?id=<?php echo $data['id_usuario']; ?>">Eliminar</a>
+		</td>
+		</tr>
+
+	<!-- 	<td><?php echo $data['id_usuario'] ?></td>
+		<td><?php echo $data['nombre'] ?></td>
+		<td><?php echo $data['correo'] ?></td>
+		<td><?php echo $data['usuario'] ?></td>
+		<td><?php echo $data['rol'] ?></td>
+
+	<td>
+
+	<a class="editar" href="sistema/editar_usuario.php?id=<?php echo $data['id_usuario']; ?>">Editar</a>
+
+	<?php 
+
+	if ($data['id_usuario']!=1) { ?>
+
+	<a class="eliminar" href="sistema/eliminar_usuario.php?id=<?php echo $data['id_usuario']; ?>">Eliminar</a>
+<?php } ?>
+
+</td>
+	</tr> -->
+
+
+</body>
+</html>

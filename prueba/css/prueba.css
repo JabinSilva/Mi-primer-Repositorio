@@ -1,0 +1,126 @@
+body{
+	/*background: darkred*/;
+	background: rgb(3, 35, 54);
+	margin: 50px;
+}
+
+.text-header{
+	
+	width: 300px;
+	margin: auto;
+	text-align: center;
+}
+
+.text-header h1{
+	letter-spacing: 6px;
+	font-size: 30px;
+	background: black;
+	color: lightgreen;
+	border: 5px solid #fff;
+	border-radius: 10px;
+}
+
+section .galeria{
+	background: url('../fotos/estrella.png') no-repeat;
+	background-size: 120%;
+	overflow: hidden;
+	border: 10px solid black;
+	padding: 9px 10px;
+}
+
+.galeria{
+ display: flex;
+ flex-wrap: wrap;
+
+
+}
+
+.galeria img{
+	width: 170px;
+	height: 200px;
+		
+}
+/*-----estilo para la carta */
+.galeria .carta{
+	position: relative;
+	width: 300px;
+	height: 350px;
+	margin: 20px;
+	margin-bottom: 30px;
+}
+
+.galeria .carta .cara{
+
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	border-radius: 12px;
+	overflow: hidden;
+	transition: .5s;
+}
+
+.carta .frente{
+	transform: perspective(600px) rotateY(0deg);
+	box-shadow: 0 5px 10px #000;
+}
+/*------poner la imagen en la carta 100% ---*/
+.carta .frente img{
+	position: absolute;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.carta .frente h3{
+	bottom: 0;
+	position: absolute;
+	color: #fff;
+	background: rgb(0, 0,0,.4);
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+}
+
+.carta .atras{
+	transform: perspective(600px) rotateY(180deg);
+	/*background: rgb(3, 35, 54);*/
+	background: url('../fotos/galaxy.png') no-repeat;
+	background-size: 100%;
+	padding: 15px;
+	color: #f3f3f3;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
+	box-shadow: 0 5px 10px #000;
+}
+
+.carta .atras .link{
+	border-top: 2px solid #fff;
+	height: 50px;
+	line-height: 50px;
+}
+
+.carta .atras h3{
+	color: #fff;
+	font-size: 30px;
+	margin: 20px;
+	letter-spacing: 4px;
+}
+
+.carta .atras p{
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+}
+
+.carta:hover .frente{
+	transform: perspective(600px) rotateY(180deg);
+	transition: 1s;
+}
+
+.carta:hover .atras{
+	transform: perspective(600px) rotateY(360deg);
+	transition: 1s;
+}

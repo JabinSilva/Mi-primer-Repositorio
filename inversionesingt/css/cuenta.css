@@ -1,0 +1,132 @@
+*{
+	margin: 0 0;
+	font-family: sans-serif,arial,Verdana;
+}
+
+#contenedor-usuario{
+
+	height: 50px;
+	background:#008B8B;
+}
+
+#contenedor-usuario #usuario{
+	padding: 5px 30px;
+	font-size: 20px;
+}
+
+#contenedor-usuario .logo{
+margin: auto;
+float: left;
+padding: 5px 30px;
+color: #E0FFFF;
+}
+
+#contenedor-usuario #usuario p{
+	float: right;
+	color: #F0F8FF;
+	padding: 0 20px;
+	font-weight: 600;
+	margin: auto;
+}
+
+#usuario span{
+	float: right;
+	color: #F0F8FF;
+	padding: 0 20px;
+	font-weight: 600;
+}
+
+#usuario .user{
+	padding: 0 20px;
+	font-weight: 600;
+
+}
+
+#usuario .cerrar-sesion{
+float: right;
+	color: #F0F8FF;
+	padding: 0 20px;
+	font-weight: 600;
+	text-decoration: none;	
+}
+
+#usuario .cerrar-sesion:hover{
+	color: #808080;
+	transition: .9s;
+}
+
+#contenido{
+	background: #808080;
+	width: 100%;
+	height: 100vh;
+	justify-content: center;
+	text-align: center;
+	padding-top: 50px;
+}
+
+#contenido form{
+
+	display: block;
+	width:500px;
+	margin: auto;
+	padding: 10px 4px;
+	padding-bottom: 15px;
+	font-size: 11pt;
+	border: 1px solid #85929e;
+	border-radius: 5px;
+	background: #fff;
+	}
+
+h2{
+	text-align: center;
+	color: #fff;
+	background: #20B2AA;
+	width: 100%;
+	font-size: 30px;
+	margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="password"]
+{
+    
+	font-size: 20px;
+	width: 40%;
+	padding: 5px 0px;
+	border: 1px solid #1a2537;
+	margin: auto;
+
+}
+
+.input-contenedor{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: none;
+}
+
+.icon{
+	min-width: 50px;
+	text-align: center;
+	color: #999;
+}
+
+.butom{
+	
+	width: 120px;
+	color: white;
+	font-size: 15px;
+	background: #20B2AA;
+	margin: auto;
+	padding: 10px 15px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+
+	.butom:hover{
+	background: cadetblue;
+}
+
+img{
+	width: 250px;
+}
